@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "estatify/mortgage-calculator",
+	"version": "1.0.0",
+	"title": "Mortgage Calculator",
+	"category": "estatify",
+	"icon": "calculator",
+	"description": "Interactive monthly payment estimate with editable default price, down payment, interest rate and term. Uses the listing price on single property pages.",
+	"keywords": [ "real estate", "mortgage", "loan", "calculator", "finance" ],
+	"textdomain": "estatify",
+	"usesContext": [ "postId", "postType" ],
+	"attributes": {
+		"heading": { "type": "string", "default": "" },
+		"price": { "type": "number", "default": 450000 },
+		"downPayment": { "type": "number", "default": 20 },
+		"rate": { "type": "number" },
+		"years": { "type": "integer", "default": 30 },
+		"usePropertyPrice": { "type": "boolean", "default": true },
+		"showBreakdown": { "type": "boolean", "default": true }
+	},
+	"supports": {
+		"html": false,
+		"interactivity": true,
+		"align": [ "wide" ],
+		"spacing": { "margin": true, "padding": true },
+		"color": { "background": true, "text": true }
+	},
+	"example": { "attributes": { "price": 485000 } },
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

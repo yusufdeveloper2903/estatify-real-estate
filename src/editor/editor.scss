@@ -1,0 +1,43 @@
+.estatify-panel {
+	.estatify-picker {
+		height: 180px;
+		overflow: hidden;
+		border: 1px solid #dcdcde;
+		border-radius: 4px;
+		cursor: crosshair;
+	}
+
+	.estatify-panel__hint {
+		margin: 0;
+		color: #757575;
+		font-size: 12px;
+	}
+}
+
+.estatify-picker-pin {
+	border: 3px solid #fff;
+	border-radius: 50%;
+	background: #c4572f;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.estatify-gallery-field {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 6px;
+	margin: 0 0 8px;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin: 0;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 1;
+		border-radius: 3px;
+		object-fit: cover;
+	}
+}

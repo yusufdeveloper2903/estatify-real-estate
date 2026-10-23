@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "estatify/property-details",
+  "version": "1.0.0",
+  "title": "Property Details",
+  "category": "estatify",
+  "icon": "id-alt",
+  "description": "Title, price, photo gallery, spec table and features for the current property. Designed for the single property template.",
+  "keywords": [
+    "real estate",
+    "gallery",
+    "specs",
+    "single property"
+  ],
+  "textdomain": "estatify",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {
+    "showGallery": {
+      "type": "boolean",
+      "default": true
+    },
+    "showFeatures": {
+      "type": "boolean",
+      "default": true
+    },
+    "showHeader": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false,
+    "interactivity": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScriptModule": "file:./view.js",
+  "render": "file:./render.php"
+}

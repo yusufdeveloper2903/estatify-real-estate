@@ -1,0 +1,49 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Estatify – real-estate listings with custom Gutenberg blocks",
+		"description": "Installs Estatify from GitHub and imports fictional Lisbon listings, a Find a home page, a mortgage calculator page and a menu.",
+		"author": "Yusuf Yuldashev",
+		"categories": [ "Real estate", "Blocks" ]
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "Estatify",
+				"blogdescription": "Homes for sale and rent in Lisbon",
+				"permalink_structure": "/%postname%/"
+			}
+		},
+		{
+			"step": "activateTheme",
+			"themeFolderName": "twentytwentyfive"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/yusufdeveloper2903/estatify-real-estate",
+				"ref": "main",
+				"refType": "branch"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "estatify"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require_once '/wordpress/wp-load.php'; \\Estatify\\Demo\\Seeder::run();"
+		}
+	]
+}

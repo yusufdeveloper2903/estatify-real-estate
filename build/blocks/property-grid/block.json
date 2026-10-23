@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "estatify/property-grid",
+  "version": "1.0.0",
+  "title": "Property Grid",
+  "category": "estatify",
+  "icon": "grid-view",
+  "description": "Listing cards with photo, price, beds, baths and area. Connects to a Property Search block on the same page, or shows a fixed selection.",
+  "keywords": [
+    "real estate",
+    "listings",
+    "cards",
+    "properties"
+  ],
+  "textdomain": "estatify",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {
+    "columns": {
+      "type": "integer",
+      "default": 3
+    },
+    "count": {
+      "type": "integer",
+      "default": 6
+    },
+    "connectToSearch": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "propertyType": {
+      "type": "string",
+      "default": ""
+    },
+    "location": {
+      "type": "string",
+      "default": ""
+    },
+    "status": {
+      "type": "string",
+      "default": ""
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "newest",
+      "enum": [
+        "newest",
+        "price_asc",
+        "price_desc",
+        "area_desc"
+      ]
+    },
+    "excludeCurrent": {
+      "type": "boolean",
+      "default": false
+    },
+    "inheritArchive": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "interactivity": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "count": 3,
+      "connectToSearch": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScriptModule": "file:./view.js",
+  "render": "file:./render.php"
+}

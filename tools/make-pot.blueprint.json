@@ -1,0 +1,9 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"steps": [
+		{
+			"step": "wp-cli",
+			"command": "wp i18n make-pot wp-content/plugins/estatify wp-content/plugins/estatify/languages/estatify.pot --slug=estatify --domain=estatify --skip-block-json --skip-theme-json --exclude=node_modules,tools,build,docs,demo"
+		}
+	]
+}

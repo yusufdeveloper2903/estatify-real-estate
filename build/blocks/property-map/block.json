@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "estatify/property-map",
+  "version": "1.0.0",
+  "title": "Property Map",
+  "category": "estatify",
+  "icon": "location-alt",
+  "description": "Leaflet + OpenStreetMap map with a price pin for every listing. Follows the Property Search filters, or shows the current property on single property pages.",
+  "keywords": [
+    "real estate",
+    "map",
+    "leaflet",
+    "openstreetmap",
+    "location"
+  ],
+  "textdomain": "estatify",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {
+    "height": {
+      "type": "integer",
+      "default": 440
+    },
+    "zoom": {
+      "type": "integer",
+      "default": 13
+    },
+    "scrollZoom": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "interactivity": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "height": 300
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScriptModule": "file:./view.js",
+  "render": "file:./render.php"
+}

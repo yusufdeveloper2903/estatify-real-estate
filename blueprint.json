@@ -1,0 +1,40 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Estatify demo (local)",
+		"description": "Boots WordPress with the locally mounted Estatify plugin and imports the Lisbon demo listings.",
+		"author": "Yusuf Yuldashev",
+		"categories": [ "Real estate", "Blocks" ]
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "Estatify",
+				"blogdescription": "Homes for sale and rent in Lisbon",
+				"permalink_structure": "/%postname%/"
+			}
+		},
+		{
+			"step": "activateTheme",
+			"themeFolderName": "twentytwentyfive"
+		},
+		{
+			"step": "activatePlugin",
+			"pluginPath": "estatify/estatify.php"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require_once '/wordpress/wp-load.php'; \\Estatify\\Demo\\Seeder::run();"
+		}
+	]
+}

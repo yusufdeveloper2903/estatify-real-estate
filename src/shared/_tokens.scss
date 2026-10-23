@@ -1,0 +1,74 @@
+// Design tokens shared by every Estatify block. Values fall back to sensible
+// defaults but pick up the active theme's fonts automatically.
+@mixin tokens {
+	--estatify-ink: #13222e;
+	--estatify-ink-soft: #4a5866;
+	--estatify-muted: #7b8794;
+	--estatify-line: #e3e7ec;
+	--estatify-surface: #ffffff;
+	--estatify-surface-alt: #f5f3ef;
+	--estatify-brand: #0f3b4c;
+	--estatify-accent: #c4572f;
+	--estatify-accent-soft: #fbeee8;
+	--estatify-sale: #1f7a5a;
+	--estatify-rent: #2d5bd1;
+	--estatify-sold: #8a8f98;
+	--estatify-radius: 14px;
+	--estatify-radius-sm: 9px;
+	--estatify-shadow: 0 1px 2px rgba(19, 34, 46, 0.06), 0 8px 24px rgba(19, 34, 46, 0.08);
+	--estatify-shadow-hover: 0 2px 4px rgba(19, 34, 46, 0.08), 0 16px 40px rgba(19, 34, 46, 0.14);
+	--estatify-font: inherit;
+	box-sizing: border-box;
+	font-family: var(--estatify-font);
+	color: var(--estatify-ink);
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+}
+
+@mixin button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4em;
+	min-height: 42px;
+	padding: 0 1.1em;
+	border: 1px solid var(--estatify-brand);
+	border-radius: 999px;
+	background: var(--estatify-brand);
+	color: #fff;
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 600;
+	line-height: 1;
+	cursor: pointer;
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+	&:hover:not(:disabled) {
+		background: #0a2a37;
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--estatify-accent);
+		outline-offset: 2px;
+	}
+
+	&:disabled {
+		opacity: 0.4;
+		cursor: not-allowed;
+	}
+}
+
+@mixin button-ghost {
+	background: transparent;
+	color: var(--estatify-brand);
+	border-color: var(--estatify-line);
+
+	&:hover:not(:disabled) {
+		background: var(--estatify-surface-alt);
+		border-color: var(--estatify-brand);
+	}
+}

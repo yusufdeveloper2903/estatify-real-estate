@@ -1,0 +1,270 @@
+{
+	"_note": "Fictional demo listings for the Estatify plugin. Addresses, prices and descriptions are invented; coordinates are approximate neighbourhood locations in Lisbon.",
+	"types": [ "Apartment", "Townhouse", "House", "Villa", "Loft", "Studio" ],
+	"locations": [
+		{ "name": "Historic Centre", "description": "Alfama, Baixa and Graça: tiled facades, trams and viewpoints over the Tagus." },
+		{ "name": "Chiado & Príncipe Real", "description": "Elegant streets, bookshops and gardens at the heart of the city." },
+		{ "name": "Estrela & Campo de Ourique", "description": "Leafy, residential and close to the Estrela Basilica and the river." },
+		{ "name": "Belém & Restelo", "description": "Wide avenues, villas and the riverside monuments of western Lisbon." },
+		{ "name": "Parque das Nações", "description": "Modern riverside district built for Expo '98." },
+		{ "name": "Avenidas Novas", "description": "Central business district with generous apartments and good transport." }
+	],
+	"features": [ "Balcony", "Terrace", "Garden", "Pool", "River view", "Parking", "Elevator", "Air conditioning", "Fireplace", "Furnished", "Pet friendly", "Renovated" ],
+	"listings": [
+		{
+			"title": "Sunlit Alfama townhouse with river glimpses",
+			"type": "Townhouse",
+			"location": "Historic Centre",
+			"status": "for_sale",
+			"price": 685000,
+			"bedrooms": 3,
+			"bathrooms": 2,
+			"area": 142,
+			"address": "Rua de São Miguel 28, 1100-544 Lisboa",
+			"lat": 38.7116,
+			"lng": -9.1298,
+			"features": [ "Balcony", "River view", "Renovated", "Fireplace" ],
+			"image": "alfama-townhouse",
+			"gallery": [ "interior-living-1", "interior-kitchen-3", "interior-bedroom-2" ],
+			"excerpt": "A restored four-storey townhouse on one of Alfama's prettiest lanes, with iron balconies and a view of the Tagus from the top floor.",
+			"description": [
+				"Set on a quiet lane a few steps from the Largo de São Miguel, this restored townhouse keeps the character of old Alfama: arched windows, original pine floors and wrought-iron balconies on every level.",
+				"The ground floor opens onto a bright kitchen and dining room. Upstairs there are three double bedrooms, two bathrooms and a living room with a working fireplace. From the top-floor balcony you can see the river between the rooftops.",
+				"The famous 28 tram stops at the end of the street, and the Feira da Ladra market and the Miradouro de Santa Luzia are both within a five-minute walk."
+			]
+		},
+		{
+			"title": "Chiado apartment with wrought-iron balconies",
+			"type": "Apartment",
+			"location": "Chiado & Príncipe Real",
+			"status": "for_sale",
+			"price": 920000,
+			"bedrooms": 2,
+			"bathrooms": 2,
+			"area": 118,
+			"address": "Rua Garrett 14, 1200-204 Lisboa",
+			"lat": 38.7108,
+			"lng": -9.1418,
+			"features": [ "Balcony", "Elevator", "Renovated", "Air conditioning" ],
+			"image": "chiado-apartment",
+			"gallery": [ "interior-living-2", "interior-kitchen-2", "interior-bedroom-1" ],
+			"excerpt": "A high-ceilinged, fully renovated apartment in a classic Pombaline building, minutes from Largo do Chiado.",
+			"description": [
+				"This second-floor apartment sits in a carefully restored Pombaline building with a lift. Ceilings reach 3.4 metres, and tall French windows open onto four wrought-iron balconies.",
+				"The open living and dining room faces south and gets light all afternoon. Both bedrooms have their own bathroom, and the kitchen comes fully equipped. Air conditioning and double glazing keep the street noise out.",
+				"Cafés, theatres and the Baixa-Chiado metro station are a two-minute walk away."
+			]
+		},
+		{
+			"title": "Azulejo-tiled family home in Príncipe Real",
+			"type": "Townhouse",
+			"location": "Chiado & Príncipe Real",
+			"status": "for_sale",
+			"price": 1450000,
+			"bedrooms": 4,
+			"bathrooms": 3,
+			"area": 210,
+			"address": "Rua da Escola Politécnica 52, 1250-102 Lisboa",
+			"lat": 38.7172,
+			"lng": -9.1494,
+			"features": [ "Garden", "Terrace", "Fireplace", "Parking" ],
+			"image": "principe-real-tiles",
+			"gallery": [ "interior-living-3", "interior-kitchen-1", "interior-bedroom-3" ],
+			"excerpt": "A 19th-century house with a blue-and-white tiled facade, a rear garden and a roof terrace near the Príncipe Real garden.",
+			"description": [
+				"A rare single-family house behind a striking azulejo facade. The house has been modernised with care and keeps its stucco ceilings and the original staircase.",
+				"There are four bedrooms on the upper floors, including a main suite with a dressing room. On the ground floor the living room and kitchen open onto a private garden with a lemon tree. A roof terrace looks out over the city.",
+				"A garage space is included, which is rare in this part of Lisbon."
+			]
+		},
+		{
+			"title": "Quiet Estrela house near the Basilica",
+			"type": "House",
+			"location": "Estrela & Campo de Ourique",
+			"status": "for_rent",
+			"price": 3200,
+			"bedrooms": 3,
+			"bathrooms": 2,
+			"area": 155,
+			"address": "Calçada da Estrela 7, 1200-661 Lisboa",
+			"lat": 38.7131,
+			"lng": -9.1597,
+			"features": [ "Garden", "Pet friendly", "Furnished" ],
+			"image": "estrela-family-home",
+			"gallery": [ "interior-living-1", "interior-bedroom-1", "interior-kitchen-2" ],
+			"excerpt": "A furnished three-bedroom house with a small garden, on a tree-lined street by the Jardim da Estrela.",
+			"description": [
+				"This furnished house is ready to move into, for a minimum stay of twelve months. It has three bedrooms, two bathrooms and a sunny living room that opens onto a small private garden.",
+				"The Jardim da Estrela, international schools and the 28 tram are all within walking distance. Pets are welcome."
+			]
+		},
+		{
+			"title": "Baixa loft steps from Rua Augusta",
+			"type": "Loft",
+			"location": "Historic Centre",
+			"status": "for_rent",
+			"price": 2150,
+			"bedrooms": 1,
+			"bathrooms": 1,
+			"area": 74,
+			"address": "Rua dos Fanqueiros 101, 1100-231 Lisboa",
+			"lat": 38.7112,
+			"lng": -9.1363,
+			"features": [ "Furnished", "Elevator", "Air conditioning" ],
+			"image": "baixa-loft",
+			"gallery": [ "interior-living-2", "interior-bedroom-2" ],
+			"excerpt": "An open-plan loft with exposed beams, in a lift building right in the middle of the Baixa grid.",
+			"description": [
+				"An open-plan loft on the top floor of a renovated building with a lift. Exposed timber beams, a mezzanine bedroom and a modern kitchen make it ideal for one person or a couple.",
+				"Praça do Comércio, the river and the Baixa metro station are a few minutes away on foot. Bills are not included."
+			]
+		},
+		{
+			"title": "Campo de Ourique flat with tiled facade",
+			"type": "Apartment",
+			"location": "Estrela & Campo de Ourique",
+			"status": "for_sale",
+			"price": 495000,
+			"bedrooms": 2,
+			"bathrooms": 1,
+			"area": 88,
+			"address": "Rua Ferreira Borges 33, 1350-130 Lisboa",
+			"lat": 38.7179,
+			"lng": -9.1662,
+			"features": [ "Balcony", "Renovated" ],
+			"image": "campo-de-ourique-flat",
+			"gallery": [ "interior-kitchen-1", "interior-living-3" ],
+			"excerpt": "A renovated two-bedroom flat in a tiled building, close to the Campo de Ourique market.",
+			"description": [
+				"A bright, renovated two-bedroom flat on the first floor of a tiled building. The living room has a small balcony over a pedestrian street, and the kitchen was replaced in 2024.",
+				"Campo de Ourique has its own village feel, with a covered food market, bakeries and good schools close by."
+			]
+		},
+		{
+			"title": "Riverside apartment in Parque das Nações",
+			"type": "Apartment",
+			"location": "Parque das Nações",
+			"status": "for_sale",
+			"price": 640000,
+			"bedrooms": 3,
+			"bathrooms": 2,
+			"area": 128,
+			"address": "Alameda dos Oceanos 71, 1990-196 Lisboa",
+			"lat": 38.7652,
+			"lng": -9.0948,
+			"features": [ "River view", "Pool", "Parking", "Elevator", "Air conditioning" ],
+			"image": "parque-nacoes-riverside",
+			"gallery": [ "interior-living-2", "interior-kitchen-2", "interior-bedroom-2" ],
+			"excerpt": "A three-bedroom apartment with a long terrace facing the Tagus, in a condominium with a pool and concierge.",
+			"description": [
+				"On the fifth floor of a modern condominium, this apartment has a 20-metre terrace looking straight out over the Tagus and the Vasco da Gama bridge.",
+				"The flat comes with two parking spaces and a storage room. Residents share a pool, a gym and a 24-hour concierge. Oriente station, with metro, train and airport links, is ten minutes away on foot."
+			]
+		},
+		{
+			"title": "Contemporary villa with pool in Belém",
+			"type": "Villa",
+			"location": "Belém & Restelo",
+			"status": "for_sale",
+			"price": 2350000,
+			"bedrooms": 5,
+			"bathrooms": 4,
+			"area": 340,
+			"address": "Rua de Pedrouços 83, 1400-286 Lisboa",
+			"lat": 38.6998,
+			"lng": -9.2058,
+			"features": [ "Pool", "Garden", "Parking", "Terrace", "Air conditioning" ],
+			"image": "belem-villa",
+			"gallery": [ "interior-living-3", "interior-kitchen-1", "interior-bedroom-3" ],
+			"excerpt": "A contemporary villa with floor-to-ceiling glass, a heated pool and a landscaped garden, close to the Belém riverfront.",
+			"description": [
+				"A contemporary villa set on a 900 m² plot. The living spaces are on one level and open through sliding glass walls onto the terrace, the garden and a heated pool.",
+				"There are five suites, a home office, a garage for three cars and solar panels. The Belém riverfront, the Jerónimos Monastery and the international schools are all close by."
+			]
+		},
+		{
+			"title": "Graça apartment by the miradouro",
+			"type": "Apartment",
+			"location": "Historic Centre",
+			"status": "sold",
+			"price": 410000,
+			"bedrooms": 2,
+			"bathrooms": 1,
+			"area": 79,
+			"address": "Largo da Graça 9, 1170-165 Lisboa",
+			"lat": 38.7166,
+			"lng": -9.1308,
+			"features": [ "River view", "Balcony" ],
+			"image": "graca-viewpoint",
+			"gallery": [ "interior-bedroom-1", "interior-living-1" ],
+			"excerpt": "A two-bedroom apartment with sunset views, two minutes from the Miradouro da Graça. Sold in the spring.",
+			"description": [
+				"A charming two-bedroom apartment with a balcony that looks west over the castle and the river. Sold within three weeks of listing.",
+				"Looking for something similar? Save a search on the Find a home page."
+			]
+		},
+		{
+			"title": "Avenidas Novas apartment with south terrace",
+			"type": "Apartment",
+			"location": "Avenidas Novas",
+			"status": "for_rent",
+			"price": 2600,
+			"bedrooms": 2,
+			"bathrooms": 2,
+			"area": 105,
+			"address": "Avenida da República 103, 1050-190 Lisboa",
+			"lat": 38.7421,
+			"lng": -9.1458,
+			"features": [ "Terrace", "Elevator", "Parking", "Air conditioning" ],
+			"image": "avenidas-novas-modern",
+			"gallery": [ "interior-living-2", "interior-kitchen-3" ],
+			"excerpt": "A modern two-bedroom apartment with a south-facing terrace and parking, next to the Saldanha metro.",
+			"description": [
+				"A modern two-bedroom, two-bathroom apartment in a recent building with a concierge. The living room opens onto a south-facing terrace that gets sun all day.",
+				"A parking space is included. Saldanha and Campo Pequeno metro stations are both within a five-minute walk."
+			]
+		},
+		{
+			"title": "Restelo garden house with mature trees",
+			"type": "Villa",
+			"location": "Belém & Restelo",
+			"status": "sold",
+			"price": 1780000,
+			"bedrooms": 4,
+			"bathrooms": 3,
+			"area": 260,
+			"address": "Avenida das Descobertas 113, 1400-091 Lisboa",
+			"lat": 38.7041,
+			"lng": -9.2118,
+			"features": [ "Garden", "Pool", "Parking" ],
+			"image": "restelo-garden-house",
+			"gallery": [ "interior-living-1", "interior-bedroom-3" ],
+			"excerpt": "A family house with a mature garden and a pool on one of Restelo's quietest streets. Sold.",
+			"description": [
+				"A four-bedroom family house with a large garden, mature trees and a pool. Sold to a local family.",
+				"We regularly have similar homes in Restelo that are not advertised. Get in touch to hear about them first."
+			]
+		},
+		{
+			"title": "Santos design studio near the river",
+			"type": "Studio",
+			"location": "Estrela & Campo de Ourique",
+			"status": "for_rent",
+			"price": 1450,
+			"bedrooms": 1,
+			"bathrooms": 1,
+			"area": 52,
+			"address": "Rua das Janelas Verdes 61, 1200-690 Lisboa",
+			"lat": 38.7066,
+			"lng": -9.1572,
+			"features": [ "Furnished", "River view" ],
+			"image": "santos-design-studio",
+			"gallery": [ "interior-bedroom-2", "interior-kitchen-1" ],
+			"excerpt": "A furnished designer studio with river views, around the corner from the National Museum of Ancient Art.",
+			"description": [
+				"A compact, architect-designed studio with a sleeping alcove, a fitted kitchen and views of the river from the window seat.",
+				"Santos is known for its design shops and restaurants, and the riverside cycle path is right below the building."
+			]
+		}
+	]
+}

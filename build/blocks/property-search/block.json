@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "estatify/property-search",
+  "version": "1.0.0",
+  "title": "Property Search",
+  "category": "estatify",
+  "icon": "search",
+  "description": "Live filters for property listings. Updates the Property Grid and Property Map on the same page without reloading, and keeps the URL in sync.",
+  "keywords": [
+    "real estate",
+    "filter",
+    "listings",
+    "search"
+  ],
+  "textdomain": "estatify",
+  "attributes": {
+    "showKeyword": {
+      "type": "boolean",
+      "default": true
+    },
+    "showStatus": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPrice": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSort": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false,
+    "interactivity": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    }
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScriptModule": "file:./view.js",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,243 @@
+@use "../../shared/tokens" as t;
+
+.wp-block-estatify-property-grid {
+	@include t.tokens;
+	--estatify-columns: 3;
+
+	&.is-loading .estatify-grid__list {
+		opacity: 0.45;
+		transition: opacity 0.15s ease;
+		pointer-events: none;
+	}
+
+	.estatify-grid__list {
+		display: grid;
+		grid-template-columns: repeat(var(--estatify-columns), minmax(0, 1fr));
+		gap: clamp(1rem, 2.4vw, 1.75rem);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		transition: opacity 0.2s ease;
+	}
+
+	@media (max-width: 1024px) {
+		.estatify-grid__list {
+			grid-template-columns: repeat(min(var(--estatify-columns), 2), minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 640px) {
+		.estatify-grid__list {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	[hidden] {
+		display: none !important;
+	}
+
+	.estatify-button {
+		@include t.button;
+	}
+
+	.estatify-button--ghost {
+		@include t.button-ghost;
+	}
+
+	.estatify-grid__empty {
+		display: grid;
+		justify-items: center;
+		gap: 1rem;
+		padding: 3rem 1.5rem;
+		border: 1px dashed var(--estatify-line);
+		border-radius: var(--estatify-radius);
+		background: var(--estatify-surface-alt);
+		text-align: center;
+		color: var(--estatify-ink-soft);
+
+		p {
+			margin: 0;
+			max-width: 34rem;
+		}
+	}
+
+	.estatify-pager {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.estatify-pager__label {
+		color: var(--estatify-muted);
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+}
+
+.estatify-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	margin: 0;
+	border: 1px solid var(--estatify-line);
+	border-radius: var(--estatify-radius);
+	background: var(--estatify-surface);
+	box-shadow: var(--estatify-shadow);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+	&:hover,
+	&:focus-within {
+		transform: translateY(-3px);
+		box-shadow: var(--estatify-shadow-hover);
+	}
+
+	&:hover .estatify-card__media img {
+		transform: scale(1.04);
+	}
+
+	.estatify-card__media {
+		position: relative;
+		display: block;
+		aspect-ratio: 3 / 2;
+		overflow: hidden;
+		background: var(--estatify-surface-alt);
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.4s ease;
+		}
+	}
+
+	.estatify-card__badge {
+		position: absolute;
+		top: 0.85rem;
+		left: 0.85rem;
+		padding: 0.3rem 0.7rem;
+		border-radius: 999px;
+		background: var(--estatify-sale);
+		color: #fff;
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+	}
+
+	&[data-status="for_rent"] .estatify-card__badge {
+		background: var(--estatify-rent);
+	}
+
+	&[data-status="sold"] {
+		.estatify-card__badge {
+			background: var(--estatify-sold);
+		}
+
+		.estatify-card__media img {
+			filter: grayscale(0.55);
+		}
+
+		.estatify-card__price {
+			color: var(--estatify-muted);
+			text-decoration: line-through;
+			text-decoration-thickness: 1px;
+		}
+	}
+
+	.estatify-card__body {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		gap: 0.35rem;
+		padding: 1.1rem 1.2rem 1.2rem;
+	}
+
+	.estatify-card__price {
+		margin: 0;
+		color: var(--estatify-brand);
+		font-size: 1.35rem;
+		font-weight: 800;
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+	}
+
+	.estatify-card__title {
+		margin: 0;
+		font-size: 1.02rem;
+		font-weight: 600;
+		line-height: 1.35;
+
+		a {
+			color: var(--estatify-ink);
+			text-decoration: none;
+
+			&::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+			}
+
+			&:focus-visible {
+				outline: none;
+
+				&::after {
+					outline: 2px solid var(--estatify-accent);
+					outline-offset: -2px;
+					border-radius: var(--estatify-radius);
+				}
+			}
+		}
+	}
+
+	.estatify-card__address {
+		display: flex;
+		align-items: center;
+		gap: 0.3rem;
+		margin: 0;
+		color: var(--estatify-muted);
+		font-size: 0.85rem;
+
+		.estatify-icon {
+			flex: none;
+		}
+
+		span {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	.estatify-card__specs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem 1.1rem;
+		margin: auto 0 0;
+		padding: 0.85rem 0 0;
+		border-top: 1px solid var(--estatify-line);
+		list-style: none;
+		color: var(--estatify-ink-soft);
+		font-size: 0.875rem;
+		font-weight: 600;
+
+		li {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.4rem;
+			margin: 0;
+		}
+
+		.estatify-icon {
+			color: var(--estatify-accent);
+		}
+	}
+
+	.estatify-card__address {
+		margin-bottom: 0.65rem;
+	}
+}

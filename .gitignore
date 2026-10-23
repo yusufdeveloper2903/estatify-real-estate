@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# build/ is committed on purpose: the plugin works without a build step.
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Local artefacts
+/estatify.zip
+/test-results/
+/playwright-report/

@@ -1,0 +1,1007 @@
+# Copyright (C) 2026 Yusuf Yuldashev
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Estatify 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/yusufdeveloper2903/estatify-real-estate/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-23T14:50:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: estatify\n"
+
+#. Plugin Name of the plugin
+#: estatify.php
+#: includes/Blocks/Blocks.php:65
+msgid "Estatify"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: estatify.php
+msgid "https://github.com/yusufdeveloper2903/estatify-real-estate"
+msgstr ""
+
+#. Description of the plugin
+#: estatify.php
+msgid "Real-estate listings for block themes: a Property post type, a filterable REST API and Gutenberg blocks for search, grid, map, mortgage calculator and property details."
+msgstr ""
+
+#. Author of the plugin
+#: estatify.php
+msgid "Yusuf Yuldashev"
+msgstr ""
+
+#. Author URI of the plugin
+#: estatify.php
+msgid "https://github.com/yusufdeveloper2903"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:40
+msgid "Estatify Settings"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:41
+#: includes/Admin/SettingsPage.php:56
+msgid "Settings"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:77
+msgid "Display"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:79
+msgid "How prices and areas are shown on the front end."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:86
+msgid "Defaults"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:88
+msgid "Fallback values used by the Map and Mortgage Calculator blocks."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:93
+msgid "Currency symbol"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:96
+msgid "Symbol position"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:101
+msgid "Before the amount (€250,000)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:102
+msgid "After the amount (250,000 €)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:108
+msgid "Area unit"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:113
+msgid "Square metres (m²)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:114
+msgid "Square feet (ft²)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:116
+msgid "Areas are stored in m² and converted for display."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:121
+msgid "Default interest rate (%)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:131
+msgid "Map centre latitude"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:132
+msgid "Map centre longitude"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:135
+msgid "Map zoom"
+msgstr ""
+
+#. translators: 1: current page, 2: total pages.
+#: includes/Blocks/SearchState.php:195
+#: includes/Blocks/SearchState.php:224
+#, php-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: includes/Blocks/SearchState.php:206
+#: includes/Blocks/SearchState.php:219
+msgid "No properties match your filters"
+msgstr ""
+
+#. translators: %d: number of matching properties.
+#: includes/Blocks/SearchState.php:209
+#, php-format
+msgid "%d property found"
+msgid_plural "%d properties found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Blocks/SearchState.php:220
+msgid "1 property found"
+msgstr ""
+
+#. translators: %d: number of matching properties (plural).
+#: includes/Blocks/SearchState.php:222
+#, php-format
+msgid "%d properties found"
+msgstr ""
+
+#: includes/Blocks/SearchState.php:225
+msgid "Could not load listings. Please try again."
+msgstr ""
+
+#: includes/Blocks/Templates.php:45
+msgid "Single Property"
+msgstr ""
+
+#: includes/Blocks/Templates.php:46
+msgid "Displays a single property with gallery, specs, map and mortgage calculator."
+msgstr ""
+
+#: includes/Blocks/Templates.php:51
+msgid "Property Archive"
+msgstr ""
+
+#: includes/Blocks/Templates.php:52
+msgid "Displays the property search with a results grid."
+msgstr ""
+
+#: includes/Blocks/Templates.php:56
+msgid "Property Type Archive"
+msgstr ""
+
+#: includes/Blocks/Templates.php:57
+msgid "Displays properties of one type."
+msgstr ""
+
+#: includes/Blocks/Templates.php:61
+msgid "Property Location Archive"
+msgstr ""
+
+#: includes/Blocks/Templates.php:62
+msgid "Displays properties in one location."
+msgstr ""
+
+#: includes/Blocks/Templates.php:66
+msgid "Property Feature Archive"
+msgstr ""
+
+#: includes/Blocks/Templates.php:67
+msgid "Displays properties with one feature."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:52
+#: src/blocks/property-search/edit.js:9
+msgid "For sale"
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:53
+#: src/blocks/property-search/edit.js:10
+msgid "For rent"
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:54
+#: src/blocks/property-search/edit.js:11
+msgid "Sold"
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:68
+msgid "Asking price (sale) or monthly rent."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:75
+msgid "Number of bedrooms."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:85
+msgid "Number of bathrooms."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:95
+msgid "Living area in square metres."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:102
+msgid "Street address."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:109
+msgid "Latitude (WGS84)."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:119
+msgid "Longitude (WGS84)."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:129
+#: includes/Rest/PropertiesController.php:197
+msgid "Listing status."
+msgstr ""
+
+#: includes/Meta/PropertyMeta.php:169
+msgid "Gallery attachment IDs."
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:47
+msgctxt "post type general name"
+msgid "Properties"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:48
+msgctxt "post type singular name"
+msgid "Property"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:49
+msgctxt "admin menu"
+msgid "Properties"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:50
+msgid "Add New"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:51
+msgid "Add New Property"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:52
+msgid "Edit Property"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:53
+msgid "New Property"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:54
+msgid "View Property"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:55
+msgid "View Properties"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:56
+msgid "Search Properties"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:57
+msgid "No properties found."
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:58
+msgid "No properties found in Trash."
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:59
+msgid "All Properties"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:60
+msgid "Property Archives"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:61
+msgid "Cover photo"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:62
+msgid "Set cover photo"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:80
+msgid "Describe the property: light, layout, neighbourhood…"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:104
+msgctxt "taxonomy general name"
+msgid "Property Types"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:105
+msgctxt "taxonomy singular name"
+msgid "Property Type"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:106
+msgid "All Types"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:107
+msgid "Edit Type"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:108
+msgid "Add New Type"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:109
+msgid "Types"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:121
+msgctxt "taxonomy general name"
+msgid "Locations"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:122
+msgctxt "taxonomy singular name"
+msgid "Location"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:123
+msgid "All Locations"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:124
+msgid "Edit Location"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:125
+msgid "Add New Location"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:126
+msgid "Locations"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:138
+msgctxt "taxonomy general name"
+msgid "Features"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:139
+msgctxt "taxonomy singular name"
+msgid "Feature"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:140
+msgid "All Features"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:141
+msgid "Edit Feature"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:142
+msgid "Add New Feature"
+msgstr ""
+
+#: includes/PostTypes/PropertyPostType.php:143
+#: src/blocks/property-details/render.php:173
+msgid "Features"
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:73
+msgid "Property ID."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:94
+msgid "Listings are not available."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:99
+msgid "Sorry, you are not allowed to list properties."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:103
+msgid "Too many requests. Please slow down."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:123
+msgid "Invalid property ID."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:127
+msgid "Sorry, you are not allowed to view this property."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:175
+msgid "Current page of the collection."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:181
+msgid "Maximum number of items per page."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:188
+msgid "Keyword search in title and description."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:193
+msgid "Property type slug(s), comma separated."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:194
+msgid "Location slug(s), comma separated."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:195
+msgid "Feature slug(s); listings must have all of them."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:202
+msgid "Minimum price."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:207
+msgid "Maximum price (0 = no limit)."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:212
+msgid "Minimum number of bedrooms."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:218
+msgid "Minimum number of bathrooms."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:224
+msgid "Sort field."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:230
+msgid "Sort direction."
+msgstr ""
+
+#: includes/Rest/PropertiesController.php:236
+msgid "Include lightweight map markers for every match."
+msgstr ""
+
+#: includes/Support/Format.php:46
+msgid "Price on request"
+msgstr ""
+
+#. translators: %s: monthly rent, e.g. €1,800.
+#: includes/Support/Format.php:53
+#, php-format
+msgid "%s /mo"
+msgstr ""
+
+#. translators: %s: area in square feet.
+#: includes/Support/Format.php:67
+#, php-format
+msgid "%s ft²"
+msgstr ""
+
+#. translators: %s: area in square metres.
+#: includes/Support/Format.php:71
+#, php-format
+msgid "%s m²"
+msgstr ""
+
+#. translators: %d: number of bedrooms.
+#: includes/Support/Presenter.php:75
+#, php-format
+msgid "%d bed"
+msgid_plural "%d beds"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of bathrooms.
+#: includes/Support/Presenter.php:77
+#, php-format
+msgid "%d bath"
+msgid_plural "%d baths"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/blocks/mortgage-calculator/render.php:43
+#: src/blocks/mortgage-calculator/edit.js:96
+msgid "Mortgage calculator"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:66
+#: src/blocks/mortgage-calculator/edit.js:101
+msgid "Estimate your monthly repayment in seconds."
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:72
+#: src/blocks/mortgage-calculator/edit.js:33
+#: src/blocks/mortgage-calculator/edit.js:107
+msgid "Home price"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:82
+#: src/blocks/mortgage-calculator/edit.js:115
+msgid "Down payment"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:93
+#: src/blocks/mortgage-calculator/edit.js:124
+msgid "Interest rate"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:101
+#: src/blocks/mortgage-calculator/edit.js:64
+#: src/blocks/mortgage-calculator/edit.js:131
+msgid "Loan term"
+msgstr ""
+
+#. translators: %d: number of years.
+#: src/blocks/mortgage-calculator/render.php:107
+#: src/blocks/mortgage-calculator/edit.js:69
+#: src/blocks/mortgage-calculator/edit.js:135
+#, php-format,js-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/blocks/mortgage-calculator/render.php:117
+#: src/blocks/mortgage-calculator/edit.js:143
+msgid "Estimated monthly payment"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:126
+#: src/blocks/mortgage-calculator/edit.js:152
+msgid "Loan amount"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:130
+#: src/blocks/mortgage-calculator/edit.js:156
+msgid "Total interest"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:134
+#: src/blocks/mortgage-calculator/edit.js:160
+msgid "Total repaid"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/render.php:139
+#: src/blocks/mortgage-calculator/edit.js:167
+msgid "Illustrative estimate only. Excludes taxes, insurance and fees."
+msgstr ""
+
+#: src/blocks/property-details/render.php:63
+#: src/blocks/property-search/render.php:50
+#: src/blocks/property-search/edit.js:101
+#: src/editor/index.js:210
+msgid "Bedrooms"
+msgstr ""
+
+#: src/blocks/property-details/render.php:64
+#: src/editor/index.js:220
+msgid "Bathrooms"
+msgstr ""
+
+#: src/blocks/property-details/render.php:65
+#: src/editor/index.js:231
+msgid "Living area"
+msgstr ""
+
+#: src/blocks/property-details/render.php:66
+msgid "Type"
+msgstr ""
+
+#: src/blocks/property-details/render.php:67
+#: src/blocks/property-search/render.php:44
+#: src/blocks/property-grid/edit.js:191
+#: src/blocks/property-search/edit.js:100
+msgid "Neighbourhood"
+msgstr ""
+
+#: src/blocks/property-details/render.php:68
+#: src/blocks/property-grid/edit.js:199
+#: src/editor/index.js:182
+msgid "Status"
+msgstr ""
+
+#: src/blocks/property-details/render.php:72
+msgid "Price per m²"
+msgstr ""
+
+#: src/blocks/property-details/render.php:110
+#: src/editor/index.js:174
+msgid "Property details"
+msgstr ""
+
+#: src/blocks/property-details/render.php:128
+#: src/editor/index.js:195
+msgid "Monthly rent"
+msgstr ""
+
+#: src/blocks/property-details/render.php:128
+msgid "Asking price"
+msgstr ""
+
+#: src/blocks/property-details/render.php:140
+msgid "Previous photo"
+msgstr ""
+
+#: src/blocks/property-details/render.php:141
+msgid "Next photo"
+msgstr ""
+
+#. translators: %d: photo number.
+#: src/blocks/property-details/render.php:152
+#, php-format
+msgid "Show photo %d"
+msgstr ""
+
+#: src/blocks/property-grid/render.php:109
+msgid "No homes match these filters yet. Try widening the price range or choosing another neighbourhood."
+msgstr ""
+
+#: src/blocks/property-grid/render.php:110
+msgid "Clear all filters"
+msgstr ""
+
+#: src/blocks/property-grid/render.php:114
+msgid "Listings pagination"
+msgstr ""
+
+#: src/blocks/property-grid/render.php:117
+msgid "Previous"
+msgstr ""
+
+#: src/blocks/property-grid/render.php:121
+msgid "Next"
+msgstr ""
+
+#: src/blocks/property-map/render.php:39
+msgid "Map showing the property location"
+msgstr ""
+
+#: src/blocks/property-map/render.php:43
+msgid "Map of matching properties"
+msgstr ""
+
+#: src/blocks/property-search/render.php:38
+#: src/blocks/property-grid/edit.js:183
+#: src/blocks/property-search/edit.js:99
+msgid "Property type"
+msgstr ""
+
+#: src/blocks/property-search/render.php:39
+#: src/blocks/property-grid/edit.js:185
+#: src/blocks/property-search/edit.js:99
+msgid "Any type"
+msgstr ""
+
+#: src/blocks/property-search/render.php:45
+#: src/blocks/property-grid/edit.js:193
+#: src/blocks/property-search/edit.js:100
+msgid "Anywhere"
+msgstr ""
+
+#: src/blocks/property-search/render.php:51
+#: src/blocks/property-search/edit.js:101
+msgid "Any"
+msgstr ""
+
+#: src/blocks/property-search/render.php:53
+msgid "1+ beds"
+msgstr ""
+
+#: src/blocks/property-search/render.php:54
+msgid "2+ beds"
+msgstr ""
+
+#: src/blocks/property-search/render.php:55
+msgid "3+ beds"
+msgstr ""
+
+#: src/blocks/property-search/render.php:56
+msgid "4+ beds"
+msgstr ""
+
+#: src/blocks/property-search/render.php:62
+#: src/blocks/property-grid/edit.js:170
+#: src/blocks/property-search/edit.js:122
+msgid "Newest first"
+msgstr ""
+
+#: src/blocks/property-search/render.php:63
+#: src/blocks/property-grid/edit.js:171
+msgid "Price: low to high"
+msgstr ""
+
+#: src/blocks/property-search/render.php:64
+#: src/blocks/property-grid/edit.js:172
+msgid "Price: high to low"
+msgstr ""
+
+#: src/blocks/property-search/render.php:65
+#: src/blocks/property-grid/edit.js:173
+msgid "Largest first"
+msgstr ""
+
+#: src/blocks/property-search/render.php:68
+#: src/blocks/property-search/edit.js:8
+msgid "All"
+msgstr ""
+
+#: src/blocks/property-search/render.php:73
+msgid "Filter properties"
+msgstr ""
+
+#: src/blocks/property-search/render.php:78
+msgid "Listing status"
+msgstr ""
+
+#: src/blocks/property-search/render.php:91
+#: src/blocks/property-search/edit.js:91
+msgid "Keyword"
+msgstr ""
+
+#: src/blocks/property-search/render.php:93
+#: src/blocks/property-search/edit.js:95
+msgid "Terrace, river view, garden…"
+msgstr ""
+
+#: src/blocks/property-search/render.php:112
+#: src/blocks/property-search/edit.js:104
+#: src/editor/index.js:196
+msgid "Price"
+msgstr ""
+
+#: src/blocks/property-search/render.php:115
+msgid "Minimum price"
+msgstr ""
+
+#. translators: %s: currency symbol.
+#: src/blocks/property-search/render.php:116
+#, php-format
+msgid "Min %s"
+msgstr ""
+
+#: src/blocks/property-search/render.php:120
+msgid "Maximum price"
+msgstr ""
+
+#. translators: %s: currency symbol.
+#: src/blocks/property-search/render.php:121
+#, php-format
+msgid "Max %s"
+msgstr ""
+
+#: src/blocks/property-search/render.php:137
+#: src/blocks/property-search/edit.js:120
+msgid "Sort"
+msgstr ""
+
+#: src/blocks/property-search/render.php:146
+#: src/blocks/property-search/edit.js:127
+msgid "Reset"
+msgstr ""
+
+#: src/blocks/property-search/render.php:150
+msgid "Search"
+msgstr ""
+
+#: templates/archive-property.php:17
+msgid "All properties"
+msgstr ""
+
+#: templates/single-property.php:23
+msgid "About this home"
+msgstr ""
+
+#: templates/single-property.php:29
+msgid "Location"
+msgstr ""
+
+#: templates/single-property.php:45
+msgid "More homes you might like"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/edit.js:30
+msgid "Default values"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/edit.js:42
+msgid "Down payment (%)"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/edit.js:50
+msgid "Interest rate (%)"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/edit.js:51
+msgid "Leave empty to use the rate from Properties → Settings."
+msgstr ""
+
+#: src/blocks/mortgage-calculator/edit.js:74
+msgid "Behaviour"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/edit.js:77
+msgid "Use the listing price on property pages"
+msgstr ""
+
+#: src/blocks/mortgage-calculator/edit.js:83
+msgid "Show cost breakdown"
+msgstr ""
+
+#: src/blocks/property-details/edit.js:11
+msgid "Property Details"
+msgstr ""
+
+#: src/blocks/property-details/edit.js:12
+msgid "Shows the gallery, price and spec table of the current property. Add it to the Single Property template or to a property."
+msgstr ""
+
+#: src/blocks/property-details/edit.js:26
+msgid "Sections"
+msgstr ""
+
+#: src/blocks/property-details/edit.js:29
+msgid "Title and price"
+msgstr ""
+
+#: src/blocks/property-details/edit.js:35
+msgid "Photo gallery"
+msgstr ""
+
+#: src/blocks/property-details/edit.js:41
+msgid "Features list"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:124
+msgid "Layout"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:128
+msgid "Columns"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:137
+msgid "Listings per page"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:144
+msgid "Listings"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:147
+msgid "Connect to Property Search"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:150
+msgid "Results follow the Property Search block on this page."
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:151
+msgid "Shows a fixed selection using the filters below."
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:159
+msgid "Show pagination"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:167
+msgid "Default order"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:179
+#: src/blocks/property-search/edit.js:48
+msgid "Filters"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:202
+msgid "Any status"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:211
+msgid "Exclude the current property"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:212
+msgid "Useful for \"More homes\" sections on single property pages."
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:218
+msgid "Use the archive term"
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:219
+msgid "On type, location or feature archives, list that term’s properties."
+msgstr ""
+
+#: src/blocks/property-grid/edit.js:236
+msgid "No properties match these settings."
+msgstr ""
+
+#: src/blocks/property-map/edit.js:68
+msgid "Map settings"
+msgstr ""
+
+#: src/blocks/property-map/edit.js:72
+msgid "Height (px)"
+msgstr ""
+
+#: src/blocks/property-map/edit.js:82
+msgid "Zoom (single property)"
+msgstr ""
+
+#: src/blocks/property-map/edit.js:90
+msgid "Zoom with mouse wheel"
+msgstr ""
+
+#: src/blocks/property-search/edit.js:51
+msgid "Status tabs (sale / rent / sold)"
+msgstr ""
+
+#: src/blocks/property-search/edit.js:57
+msgid "Keyword field"
+msgstr ""
+
+#: src/blocks/property-search/edit.js:63
+msgid "Price range"
+msgstr ""
+
+#: src/blocks/property-search/edit.js:69
+msgid "Sort menu"
+msgstr ""
+
+#: src/blocks/property-search/edit.js:115
+msgid "Results update live on the front end"
+msgstr ""
+
+#: src/editor/index.js:112
+msgid "Gallery"
+msgstr ""
+
+#: src/editor/index.js:113
+msgid "Shown after the cover photo on the property page."
+msgstr ""
+
+#: src/editor/index.js:137
+msgid "Edit gallery"
+msgstr ""
+
+#: src/editor/index.js:137
+msgid "Add photos"
+msgstr ""
+
+#: src/editor/index.js:141
+msgid "Clear"
+msgstr ""
+
+#: src/editor/index.js:242
+msgid "Address"
+msgstr ""
+
+#: src/editor/index.js:244
+msgid "Street, number, postcode"
+msgstr ""
+
+#: src/editor/index.js:251
+msgid "Location on map"
+msgstr ""
+
+#: src/editor/index.js:252
+msgid "Click the map or drag the pin to set the coordinates."
+msgstr ""
+
+#: src/editor/index.js:265
+msgid "Latitude"
+msgstr ""
+
+#: src/editor/index.js:277
+msgid "Longitude"
+msgstr ""
+
+#. translators: %s: price per square metre.
+#: src/editor/index.js:297
+#, js-format
+msgid "≈ %s per m²"
+msgstr ""
